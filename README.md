@@ -1,21 +1,6 @@
-# `hello_world`
+# `butter`
 
 This is a Reason library.
-
-## Template Init
-
-After copying this template a convenience script is included to update all
-appropriate filenames and contents for a new library name.
-
-- The script accepts two arguments: old_name, new_name
-- The arguments should be in snake_case, they are converted to TitleCase within
-  the script when required.
-
-```bash
-scripts/rename hello_world my_library
-```
-
-- Remove this section from the readme after completing the rename.
 
 ## Install `esy`
 
@@ -36,7 +21,7 @@ esy
 
 _This is a combination of `esy install` and `esy build`_
 
-## Run tests for `HelloWorld.re`
+## Run tests for `Butter.re`
 
 ```bash
 esy test

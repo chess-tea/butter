@@ -1,12 +1,12 @@
 {
-  "name": "hello_world",
+  "name": "butter",
   "version": "1.0.0",
   "description": "This is a library.",
   "license": "MIT",
   "esy": {
     "build": "refmterr dune build -p #{self.name}",
     "install": [
-      "esy-installer hello_world.install"
+      "esy-installer butter.install"
     ],
     "exportedEnv": {
       "OCAMLRUNPARAM": {

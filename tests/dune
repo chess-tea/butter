@@ -6,7 +6,7 @@
   (libraries
     console.lib
     rely.lib
-    hello_world
+    butter
   )
   (modules :standard \ TestExe)
 )
