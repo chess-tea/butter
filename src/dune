@@ -1,7 +1,7 @@
 (library
   (name Butter)
   (public_name butter)
-  (ocamlopt_flags -w -9-27)
+  (ocamlopt_flags -linkall -w -9-27)
   (ocamlc_flags -w -9-27)
   (libraries)
 )

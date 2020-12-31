@@ -1,6 +1,9 @@
 # `butter`
 
-This is a Reason library.
+This is a set of tools to complement
+[`chess-tea/bread`](https://github.com/chess-tea/bread). The tools here are
+more "quick-and-dirty" things for my own use. As they become more production
+ready they will get promoted to `chess-tea/bread`.
 
 ## Install `esy`
 
