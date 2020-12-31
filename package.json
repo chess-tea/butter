@@ -22,6 +22,7 @@
     "test": "esy '@test' x test_exe"
   },
   "dependencies": {
+    "@chess-tea/bread": "*",
     "@esy-ocaml/reason": ">= 3.6.0 < 4.0.0",
     "@opam/dune": ">=2.6",
     "@reason-native/console": "^0.1.0",
@@ -32,5 +33,8 @@
     "@opam/merlin": "*",
     "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
     "@reason-native/rely": "*"
+  },
+  "resolutions": {
+    "@chess-tea/bread": "chess-tea/bread:package.json#078b9d5"
   }
 }
