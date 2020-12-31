@@ -1,5 +1,5 @@
 {
-  "checksum": "c283262d88958b3af9127902d6244782",
+  "checksum": "12ffb760eb99a54fd865f65bab2369b0",
   "root": "butter@link-dev:./package.json",
   "node": {
     "refmterr@3.3.2@d41d8cd9": {
@@ -66,6 +66,7 @@
         "refmterr@3.3.2@d41d8cd9", "ocaml@4.10.2000@d41d8cd9",
         "@reason-native/console@0.1.0@d41d8cd9",
         "@opam/dune@opam:2.7.1@f5f493bc", "@esy-ocaml/reason@3.6.2@d41d8cd9",
+        "@chess-tea/unicode-symbols@github:chess-tea/unicode-symbols:package.json#03cb817@d41d8cd9",
         "@chess-tea/bread@github:chess-tea/bread:package.json#078b9d5@d41d8cd9"
       ],
       "devDependencies": [
@@ -1116,6 +1117,22 @@
         "@opam/merlin-extend@opam:0.6@404f814c",
         "@opam/menhir@opam:20201216@1a09d886",
         "@opam/fix@opam:20201120@5c318621", "@opam/dune@opam:2.7.1@f5f493bc"
+      ],
+      "devDependencies": []
+    },
+    "@chess-tea/unicode-symbols@github:chess-tea/unicode-symbols:package.json#03cb817@d41d8cd9": {
+      "id":
+        "@chess-tea/unicode-symbols@github:chess-tea/unicode-symbols:package.json#03cb817@d41d8cd9",
+      "name": "@chess-tea/unicode-symbols",
+      "version": "github:chess-tea/unicode-symbols:package.json#03cb817",
+      "source": {
+        "type": "install",
+        "source": [ "github:chess-tea/unicode-symbols:package.json#03cb817" ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "refmterr@3.3.2@d41d8cd9", "ocaml@4.10.2000@d41d8cd9",
+        "@opam/dune@opam:2.7.1@f5f493bc", "@esy-ocaml/reason@3.6.2@d41d8cd9"
       ],
       "devDependencies": []
     },

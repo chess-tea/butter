@@ -9,6 +9,8 @@ type config = {
   length: string => int,
 };
 
+module Box = UnicodeSymbols.BoxDrawings;
+
 module Impl = {
   // String repeat.
   let repeat = (count, s) => {
@@ -88,34 +90,34 @@ module Impl = {
 
   let getInnerBorder =
     getBorder(
-      ~leftJoint=Unicode.lightVerticalAndRight,
-      ~innerJoint=Unicode.lightVerticalAndHorizontal,
-      ~rightJoint=Unicode.lightVerticalAndLeft,
-      ~horizontal=Unicode.lightHorizontal,
+      ~leftJoint=Box.lightVerticalAndRight,
+      ~innerJoint=Box.lightVerticalAndHorizontal,
+      ~rightJoint=Box.lightVerticalAndLeft,
+      ~horizontal=Box.lightHorizontal,
     );
 
   let getHeaderBorder =
     getBorder(
-      ~leftJoint=Unicode.verticalSingleAndRightDouble,
-      ~innerJoint=Unicode.verticalSingleAndHorizontalDouble,
-      ~rightJoint=Unicode.verticalSingleAndLeftDouble,
-      ~horizontal=Unicode.doubleHorizontal,
+      ~leftJoint=Box.verticalSingleAndRightDouble,
+      ~innerJoint=Box.verticalSingleAndHorizontalDouble,
+      ~rightJoint=Box.verticalSingleAndLeftDouble,
+      ~horizontal=Box.doubleHorizontal,
     );
 
   let getTopBorder =
     getBorder(
-      ~leftJoint=Unicode.lightDownAndRight,
-      ~innerJoint=Unicode.lightDownAndHorizontal,
-      ~rightJoint=Unicode.lightDownAndLeft,
-      ~horizontal=Unicode.lightHorizontal,
+      ~leftJoint=Box.lightDownAndRight,
+      ~innerJoint=Box.lightDownAndHorizontal,
+      ~rightJoint=Box.lightDownAndLeft,
+      ~horizontal=Box.lightHorizontal,
     );
 
   let getBottomBorder =
     getBorder(
-      ~leftJoint=Unicode.lightUpAndRight,
-      ~innerJoint=Unicode.lightUpAndHorizontal,
-      ~rightJoint=Unicode.lightUpAndLeft,
-      ~horizontal=Unicode.lightHorizontal,
+      ~leftJoint=Box.lightUpAndRight,
+      ~innerJoint=Box.lightUpAndHorizontal,
+      ~rightJoint=Box.lightUpAndLeft,
+      ~horizontal=Box.lightHorizontal,
     );
 };
 
@@ -133,9 +135,9 @@ let table =
   let columnWidths = Impl.getColumnWidths(~config, ~columnCount, rows);
 
   // Figure out the separators and borders.
-  let sep = config.border ? " " ++ Unicode.lightVertical ++ " " : " ";
-  let left = config.border ? Unicode.lightVertical ++ " " : "";
-  let right = config.border ? " " ++ Unicode.lightVertical : "";
+  let sep = config.border ? " " ++ Box.lightVertical ++ " " : " ";
+  let left = config.border ? Box.lightVertical ++ " " : "";
+  let right = config.border ? " " ++ Box.lightVertical : "";
   let innerBorder = Impl.getInnerBorder(columnWidths);
   let headerBorder = Impl.getHeaderBorder(columnWidths);
   let topBorder = Impl.getTopBorder(columnWidths);

@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@chess-tea/bread": "*",
+    "@chess-tea/unicode-symbols": "*",
     "@esy-ocaml/reason": ">= 3.6.0 < 4.0.0",
     "@opam/dune": ">=2.6",
     "@reason-native/console": "^0.1.0",
@@ -35,6 +36,7 @@
     "@reason-native/rely": "*"
   },
   "resolutions": {
-    "@chess-tea/bread": "chess-tea/bread:package.json#078b9d5"
+    "@chess-tea/bread": "chess-tea/bread:package.json#078b9d5",
+    "@chess-tea/unicode-symbols": "chess-tea/unicode-symbols:package.json#03cb817"
   }
 }

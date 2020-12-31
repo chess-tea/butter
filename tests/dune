@@ -1,24 +1,18 @@
 (library
-  (name Test)
-  (public_name test)
-  (ocamlopt_flags -g -linkall -w -9-27)
-  (ocamlc_flags -g -w -9-27)
-  (libraries
-    console.lib
-    rely.lib
-    butter
-  )
-  (modules :standard \ TestExe)
-)
+ (name Test)
+ (public_name test)
+ (ocamlopt_flags -g -linkall -w -9-27)
+ (ocamlc_flags -g -w -9-27)
+ (libraries console.lib rely.lib butter)
+ (modules :standard \ TestExe))
 
 (executable
-  (name TestExe)
-  (public_name test_exe)
-  (package test)
-  (ocamlopt_flags -g -w -9-27)
-  (ocamlc_flags -g -w -9-27)
-  (libraries test)
-  (modules TestExe)
-)
+ (name TestExe)
+ (public_name test_exe)
+ (package test)
+ (ocamlopt_flags -g -w -9-27)
+ (ocamlc_flags -g -w -9-27)
+ (libraries test)
+ (modules TestExe))
 
 (include_subdirs unqualified)
