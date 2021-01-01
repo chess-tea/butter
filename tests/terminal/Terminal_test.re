@@ -83,4 +83,24 @@ describe("Terminal", ({test}) => {
 
     expect.string(actual).toEqual(expected);
   });
+
+  test("Manual", ({expect}) => {
+    // TODO: Set up capture input testing utility.
+    let manual = false;
+    if (manual) {
+      print_endline("");
+      print_endline("");
+
+      let setProgress = Terminal.controllableProgressBar(0);
+      for (i in 0 to 75) {
+        setProgress(i);
+        Unix.sleepf(0.05);
+      };
+
+      print_endline("");
+      print_endline("");
+    };
+
+    expect.int(1).toBe(1);
+  });
 });
