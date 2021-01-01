@@ -12,11 +12,6 @@ type config = {
 module Box = UnicodeSymbols.BoxDrawings;
 
 module Impl = {
-  // String repeat.
-  let repeat = (count, s) => {
-    List.init(count, _ => s) |> String.concat("");
-  };
-
   // Gets the number of columns in the table.
   let getColumnCount = (~config, rows) => {
     let columnCount =
@@ -64,7 +59,7 @@ module Impl = {
     let padRight = (s, n) => {
       let need = n - config.length(s);
       if (need > 0) {
-        s ++ repeat(need, " ");
+        s ++ StringUtils.repeat(need, " ");
       } else if (need === 0) {
         s;
       } else {
@@ -82,7 +77,7 @@ module Impl = {
     let border =
       columnWidths
       |> Array.to_list
-      |> List.map(width => {repeat(width + 2, horizontal)})
+      |> List.map(width => {StringUtils.repeat(width + 2, horizontal)})
       |> String.concat(innerJoint);
     let border = leftJoint ++ border ++ rightJoint ++ "\n";
     border;
